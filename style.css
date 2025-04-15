@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(111, 101, 255);
+}
+
+section {
+    font-family: sans-serif,Tahoma,Verdana;
+}
+
+article {
+    float: left;
+}
