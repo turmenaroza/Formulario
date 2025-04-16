@@ -9,6 +9,11 @@
 </head>
 
 <body>
+   <h1>Inscrição para o Handebol Joinville</h1> 
+   <p>Atletas do sub16 até o adulto</p>
+   <p>Temporada 2026</p>
+   <br>
+
     <form action id="AtletaForm"></form>
     <label for="nome-atleta">Nome da Atleta:</label>
     <input type="text" name="nome" id="nome-atleta" required>
@@ -20,8 +25,18 @@
 
     <label for="idade">Idade:</label>
     <input type="number" name="idade" id="idade-atleta" required>
-
     <br>
+    
+    <label for="email">Insira seu email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="identidade">Envie uma foto da sua identidade:</label>
+    <input type="file" id="identidade" name="identidade"><br><br>
+    
+
+  
+      
 
     <button type="submit" onclick="Enviar()"> Enviar</button>
 

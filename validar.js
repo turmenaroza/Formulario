@@ -2,6 +2,7 @@ function Enviar(){
     let nome = document.getElementById ('nome-atleta').value.trim();
     let CPF = document.getElementById ('cpf-atleta').value.trim();
     let idade = parseInt(document.getElementById ('idade-atleta').value,10);
+    let email = document.getElementById ('email').value.trim();
 
     if (!nome){
         alert ('Por favor, preencha o nome');
@@ -20,6 +21,12 @@ function Enviar(){
         return;
     } else {
         console.log (idade);
+    }
+    if (isNaN (email) ){
+        alert (' Insira um email válido');
+        return;
+    } else {
+        console.log (email);
     }
    alert 
 }
