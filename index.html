@@ -9,33 +9,96 @@
 </head>
 
 <body>
-   <h1>Inscrição para o Handebol Joinville</h1> 
-   <p>Atletas do sub16 até o adulto</p>
-   <p>Temporada 2026</p>
+   <h1>Inscrição para o Handebol Joinville Feminino</h1> 
+   <h2>Atletas do sub16 até o adulto</h2>
+   <h2>Temporada 2026</h2>
    <br>
 
     <form action id="AtletaForm"></form>
     <label for="nome-atleta">Nome da Atleta:</label>
     <input type="text" name="nome" id="nome-atleta" required>
-
     <br>
+    <br>
+
     <label for="cpf">CPF</label>
     <input type="text" name="CPF" id="cpf-atleta" required>
+    <br>
     <br>
 
     <label for="idade">Idade:</label>
     <input type="number" name="idade" id="idade-atleta" required>
     <br>
+    <br>
     
     <label for="email">Insira seu email:</label>
     <input type="email" id="email" name="email" required>
     <br>
+    <br>
 
     <label for="identidade">Envie uma foto da sua identidade:</label>
-    <input type="file" id="identidade" name="identidade"><br><br>
+    <input type="file" id="identidade" name="identidade">
+    <br>
+    <br>
     
 
+   
+
+    <p>Qual posição você joga?(pode selecionar mais de uma opção)</p>
+
+    <input type="checkbox" id="posicao1" name="posicao1" value="Ponta-Direita">
+    <label for="posicao1">Ponta Direita</label>
+    <br>
+    <input type="checkbox" id="posicao2" name="posicao2" value="Ponta-Esquerda">
+    <label for="posicao2"> Ponta Esquerda</label>
+    <br>
+    <input type="checkbox" id="posicao3" name="posicao3" value="Armacao-Direita">
+    <label for="posicao3"> Armação Direita</label>
+    <br>
+    <input type="checkbox" id="posicao4" name="posicao4" value="Armacao-Esquerda">
+    <label for="posicao4"> Armação Esquerda</label>
+    <br>
+    <input type="checkbox" id="posiçao5" name="posiçao5" value="Central">
+    <label for="posiçao5"> Central</label>
+    <br>
+    <input type="checkbox" id="posicao6" name="posicao6" value="Goleira">
+    <label for="posicao6"> Goleira</label>
+    <br>
+    <br>
+    
+
+    <fieldset>
+        <legend>Qual posição você defende melhor?(selecione apenas uma opção)</legend>
+      
+        <div>
+          <input type="radio" id="1-da-direita" name="defesa" value="1-da-direita" checked />
+          <label for="1-da-direita">1 da direita</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="1-da-esquerda" name="defesa" value="1-da-esquerda" />
+          <label for="1-da-esquerda">1 da esquerda</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="2-da-direita" name="defesa" value="2-da-direita" />
+          <label for="2-da-direita">2 da direita</label>
+        </div>
+
+        <div>
+            <input type="radio" id="2-da-esquerda" name="defesa" value="2-da-esquerda" />
+            <label for="2-da-esquerda">2 da esquerda</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Base" name="defesa" value="Base" />
+            <label for="Base">Na base</label>
+        </div>
+      </fieldset>
+
+   <br>
+   <br>
   
+   
       
 
     <button type="submit" onclick="Enviar()"> Enviar</button>
