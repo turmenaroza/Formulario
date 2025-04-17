@@ -3,8 +3,9 @@ function Enviar(){
     let CPF = document.getElementById ('cpf-atleta').value.trim();
     let idade = parseInt(document.getElementById ('idade-atleta').value,10);
     let email = document.getElementById ('email').value.trim();
+    let telefone = document.getElementById ('telefone').value.trim();
 
-    if (!nome){
+    if (!nome || !/^[a-zA-Z]+$/ ){
         alert ('Por favor, preencha o nome');
         return;
     }else {
@@ -28,7 +29,13 @@ function Enviar(){
     } else {
         console.log (email);
     }
-   alert 
+    if (!telefone){
+        alert ('Por favor, preencha o telefone');
+        return;
+    }else {
+        console.log (telefone);
+    }
+   alert ('Formulário enviado com sucesso')
 }
 
 

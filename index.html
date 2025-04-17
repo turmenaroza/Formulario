@@ -12,7 +12,9 @@
    <h1>Inscrição para o Handebol Joinville Feminino</h1> 
    <h2>Atletas do sub16 até o adulto</h2>
    <h2>Temporada 2026</h2>
-   <br>
+   
+
+   <input type="image" src="ajha.jpg" alt="Submit" width="100" >
 
     <form action id="AtletaForm"></form>
     <label for="nome-atleta">Nome da Atleta:</label>
@@ -20,13 +22,18 @@
     <br>
     <br>
 
-    <label for="cpf">CPF</label>
-    <input type="text" name="CPF" id="cpf-atleta" required>
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" id="idade-atleta" required>
     <br>
     <br>
 
-    <label for="idade">Idade:</label>
-    <input type="number" name="idade" id="idade-atleta" required>
+    <label for="telefone">Digite seu número de telefone:</label><br><br>
+    <input type="tel" id="telefone" name="telefone" placeholder="(47) 99221-4455" pattern="[0-9]({2})[0-9]{5}-[0-9]{4}" required>
+    <br>
+    <br>
+
+    <label for="cpf">CPF</label>
+    <input type="text" name="CPF" id="cpf-atleta" required>
     <br>
     <br>
     
@@ -94,9 +101,32 @@
             <label for="Base">Na base</label>
         </div>
       </fieldset>
+      <br>
+      <br>
+
+    <label for="cor">Selecione uma cor que gostaria como base do uniforme:</label>
+    <input type="color" id="cor" name="cor" value="#ff0000">
 
    <br>
    <br>
+    <p>Como você classificaria a sua resitência ? </p>
+    <p>0= Não aguenta 5 minutos</p>
+    <p>5= Aguenta metade de cada tempo</p>
+    <p>10= Aguenta os 2 tempos sem pedir pra sair</p>
+    <label for="fisico">0 a 10</label>
+    <input type="range" id="fisico" name="fisico" min="0" max="10">
+    <br>
+    <br>
+
+    <label for="Tempo">Selecione o tempo que você aguentaria treinar por dia? (não precisa mentir)</label>
+    <input type="time" id="tempo" name="tempo">
+    <br>
+    <br>
+
+
+   
+
+
   
    
       
